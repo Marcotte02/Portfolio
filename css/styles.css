@@ -1,0 +1,37 @@
+/* COLOR KEY
+- #02343F
+- #F0EDCC
+
+
+
+/* GLOBAL STYLES */
+body {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+/* HOME SECTION */
+
+#home h1 {
+  font-size: 8em;
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+#home h2 {
+  font-size: 4em;
+  text-align: center;
+  margin: 1em;
+}
+
+.box {
+  padding: 5rem;
+  background-color: aqua;
+  text-align: center;
+  font-size: 3em;
+  border-radius: 0.8em;
+}

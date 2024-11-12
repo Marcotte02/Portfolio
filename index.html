@@ -10,11 +10,11 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!-- Navbar -->
-    <nav id="navbar">
+    <nav id="navbar" class="hidden">
       <ul>
         <li><a href="#" id="home-link">Home</a></li>
         <li><a href="#" id="about-link">About</a></li>
@@ -29,11 +29,21 @@
       <section id="home" class="section">
         <h1>Welcome to my Portfolio</h1>
         <h2>Connor Marcotte</h2>
-        <div class="grid">
-          <div class="square" data-section="about">About Me</div>
-          <div class="square" data-section="projects">Projects</div>
-          <div class="square" data-section="Contact">Contact Me!</div>
-          <div class="square" data-section="skills">Skills & Experience</div>
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <div class="box">About</div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="box">Projects</div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="box">Skills & Experience</div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="box">Contact Me!</div>
+            </div>
+          </div>
         </div>
       </section>
 
