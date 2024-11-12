@@ -1,6 +1,12 @@
-/* COLOR KEY
-- #02343F
-- #F0EDCC
+/* 
+TYPOGRAPHY
+
+- Roboto (All text)
+
+COLOR KEY
+
+- Rich Black -> #02343F (Backgrounds)
+- Champange -> #F0EDCC (Text Content)
 
 
 
@@ -8,6 +14,7 @@
 body {
   font-size: 62.5%;
   overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
 }
 
 .hidden {
