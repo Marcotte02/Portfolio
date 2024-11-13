@@ -97,3 +97,32 @@ body {
     border-right-color: transparent;
   }
 }
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+  #home h1 {
+    font-size: 3rem; /* Adjust for large screens */
+  }
+  #home h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #home h1 {
+    font-size: 2.5rem; /* Smaller screens */
+  }
+  #home h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #home h1 {
+    font-size: 2rem; /* Mobile screens */
+  }
+  #home h2 {
+    font-size: 1.5rem;
+  }
+}
