@@ -1,16 +1,18 @@
-"use strict;";
+"use strict";
 
 document.addEventListener("DOMContentLoaded", () => {
   const boxes = document.querySelectorAll(".box");
   const homeSection = document.getElementById("home");
-  const nav = document.getElementById("nav");
+  const nav = document.getElementById("navbar");
   const sections = document.querySelectorAll(".section");
   const navLinks = nav.querySelectorAll("a");
 
   // Function for fade-in effect
-  const fadeIn = (element) => {
-    element.classList.remove("hidden");
-    element.classList.add("fade-in");
+  const fadeIn = (element, delay = 1000) => {
+    setTimeout(() => {
+      element.classList.remove("hidden");
+      element.classList.add("fade-in");
+    }, delay);
   };
 
   // Function for fade-out effect
@@ -19,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
       element.classList.add("hidden");
       element.classList.remove("fade-out");
-    }, 2000);
+    }, 1000); // Reduced time for fade-out effect
   };
 
   // Logic for when a box is clicked
@@ -34,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         nav.classList.remove("hidden");
         fadeIn(nav);
         fadeIn(targetSection);
-      }, 2000);
+      }, 1000); // Adjusted time to match the fade-out duration
     });
   });
 
@@ -55,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      if (targetSection === "home") {
+      if (targetSectionId === "home") {
         fadeOut(nav);
         setTimeout(() => fadeIn(homeSection), 500);
       } else {
